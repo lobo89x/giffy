@@ -6,6 +6,7 @@ function buttonDisplay() {
     for (var i = 0; i < btns.length; i++) {
       var a = $("<button>");
       a.addClass("query");
+    //   a.addClass("btn btn-default btn-xs");
       a.attr("data-name", btns[i]);
       a.text(btns[i]);
       $("#button-queries").append(a);

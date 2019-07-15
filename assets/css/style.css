@@ -1,20 +1,27 @@
 body {
     background: url("../images/5107c1158cfe9f8552383ff5490c793ae14c34c9.jpg");
     background-color: black;
+    width: 100%;
 }
 
 .jumbotron {
     color: #36F8C8;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #333333;
     font-size: 50px;
     font-family: 'Righteous', cursive;
     border: 5px;
+    width: 90%;
+    margin: 5px;
+
 
 }
 
 .query {
     font-size: 25px;
     /* border: 200px; */
+}
+.container {
+    width: 100%;
 }
