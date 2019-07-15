@@ -1,0 +1,20 @@
+body {
+    background: url("../images/5107c1158cfe9f8552383ff5490c793ae14c34c9.jpg");
+    background-color: black;
+}
+
+.jumbotron {
+    color: #36F8C8;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333333;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    border: 5px;
+
+}
+
+.query {
+    font-size: 25px;
+    /* border: 200px; */
+}
