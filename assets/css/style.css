@@ -8,13 +8,13 @@ body {
     color: #36F8C8;
     display: flex;
     justify-content: space-between;
-    background-color: #333333;
+    /* background-color: #333333; */
     font-size: 50px;
     font-family: 'Righteous', cursive;
     border: 5px;
     width: 90%;
     margin: 5px;
-
+    background: rgba(204, 204, 204, 0.5);
 
 }
 
