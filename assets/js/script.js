@@ -23,7 +23,7 @@ buttonDisplay();
     buttonDisplay();
   });
 
-//   $("#button-queries").on("click", function() {
+//   gif find api
     function gifapi() {
         var key = "BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9";
         var name = $(this).attr("data-name");
@@ -38,9 +38,15 @@ buttonDisplay();
             console.log(response);
             console.log("this is the button info  "+name);
             var imgUrl = response.data.image_original_url;
+            var imgString = imgUrl.split(".gif");
+            var imageStill = imgString[0]+"_s.gif";
             var itemimg = $("<img>");
-            itemimg.attr("src", imgUrl);
+            itemimg.attr("src", imageStill);
+            itemimg.attr("data-still", imageStill);
+            itemimg.attr("data-animate", imgUrl);
             itemimg.attr("alt", "image");
+            itemimg.attr("data-state", "still");
+            itemimg.attr("class", "gif")
 
             console.log(imgUrl);
             console.log(itemimg)
@@ -49,4 +55,18 @@ buttonDisplay();
           });
     };
 
+    //gif pause and play
+    function pausePlay() {
+      var current = $(this).attr("data-state");
+      if (current === "still"){
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-sate", "animate")
+      }
+      if (current === "animate"){
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-sate", "still")
+      }
+    };
+
     $(document).on("click", ".query", gifapi);
+    $(document).on("click", ".gif", pausePlay);
