@@ -2,10 +2,13 @@ body {
     /* background: url("../images/5107c1158cfe9f8552383ff5490c793ae14c34c9.jpg"); */
     background-color: black;
     width: 100%;
-    animation: blink 1s infinite ;
+    animation: blink 2s infinite ;
 }
 @keyframes blink {
     0%{
+        background: url("../images/5107c1158cfe9f8552383ff5490c793ae14c34c9.jpg");
+    }
+    99%{
         background: url("../images/5107c1158cfe9f8552383ff5490c793ae14c34c9.jpg");
     }
     100%{
