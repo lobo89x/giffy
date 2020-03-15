@@ -58,13 +58,14 @@ buttonDisplay();
     //gif pause and play
     function pausePlay() {
       var current = $(this).attr("data-state");
+      console.log(current);
       if (current === "still"){
         $(this).attr("src", $(this).attr("data-animate"));
-        $(this).attr("data-sate", "animate")
+        $(this).attr("data-state", "animate")
       }
       if (current === "animate"){
         $(this).attr("src", $(this).attr("data-still"));
-        $(this).attr("data-sate", "still")
+        $(this).attr("data-state", "still")
       }
     };
 
