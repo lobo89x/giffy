@@ -8,8 +8,11 @@ body {
     0%{
         background: url("../images/5107c1158cfe9f8552383ff5490c793ae14c34c9.jpg");
     }
-    99%{
+    45%{
         background: url("../images/5107c1158cfe9f8552383ff5490c793ae14c34c9.jpg");
+    }
+    46%{
+        background: url("../images/5107c1158cfe9f8552383ff5490c793ae14c34c9v2.jpg");
     }
     100%{
         background: url("../images/5107c1158cfe9f8552383ff5490c793ae14c34c9v2.jpg");
