@@ -1,37 +1,6 @@
-## Welcome to GitHub Pages
+## Giffy
+# by Alexander Lee
 
-You can use the [editor on GitHub](https://github.com/lobo89x/giffy/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This application is a cheap little toy for wasting time. The page is built using a simple html file to build the basic page and that is animated with a little CSS tinkering. The main crux of this app is the api that finds gifs to match the key word we supply it. I used some clever Jquery to build the buttons in the topic view and the user can use the input filed to create their own topics. When the user clicks the buttons, the test in it becomes a key phrase that will be used in an api call. That api call will then return the image and push it to the gif view in a still image to switch to the animated one when the image itself is clicked.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lobo89x/giffy/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This is not a glamourous tool by any means but will help you kill a few minutes with some crazy gifs.
