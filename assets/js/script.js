@@ -37,9 +37,10 @@ buttonDisplay();
         }).then(function(response) {
             console.log(response);
             console.log("this is the button info  "+name);
-            var imgUrl = response.data.image_original_url;
-            var imgString = imgUrl.split(".gif");
-            var imageStill = imgString[0]+"_s.gif";
+            var imgUrl = response.data.images.original.url;
+            //var imgString = imgUrl.split(".gif");
+            //var imgString = response.data.images.original_still.url;
+            var imageStill = response.data.images.original_still.url;
             var itemimg = $("<img>");
             itemimg.attr("src", imageStill);
             itemimg.attr("data-still", imageStill);
